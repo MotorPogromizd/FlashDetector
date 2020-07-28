@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>Pages/MainPage.qml</file>
+        <file>CameraControls/VideoViewer.qml</file>
+        <file>Pages/CamerasPage.qml</file>
+        <file>wait_background.jpg</file>
+        <file>fonts/UpheavalPro.ttf</file>
+    </qresource>
+</RCC>

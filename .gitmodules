@@ -1,0 +1,3 @@
+[submodule "OpenCvQtViewer"]
+	path = OpenCvQtViewer
+	url = https://github.com/RomandzeRoman/OpenCvQtViewer.git
