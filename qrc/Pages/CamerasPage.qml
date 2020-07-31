@@ -4,10 +4,7 @@ import QtMultimedia 5.9
 import QtQuick.Layouts 1.3
 import QtQuick.Controls.Material 2.3
 
-import CustomGeometry 1.0
-
-import "../CameraControls"
-import "../CommonControls"
+import OpenCvQtViewer 1.0
 
 Page {
     VideoViewer {

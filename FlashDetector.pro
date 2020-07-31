@@ -1,8 +1,10 @@
-QT += qml quick quickcontrols2 multimedia
-QT += serialbus charts serialport
-QT += network websockets core
+QT += qml quick quickcontrols2 multimedia widgets
 
 CONFIG += c++14 warn_on
+
+include(QtDebugPrint/QtDebugPrint.pri)
+include(QtFonts/QtFonts.pri)
+include(OpenCvQtViewer/OpenCvQtViewer.pri)
 
 INCLUDEPATH += /usr/local/include/opencv4
 LIBS += -L/usr/local/lib \
@@ -11,11 +13,11 @@ LIBS += -L/usr/local/lib \
 -lopencv_videoio \
 -lopencv_core
 
+HEADERS += \
+    Models/robbery.h \
+
 SOURCES += main.cpp \
-    Models/robbery.cpp \
-    debugoutput.cpp \
-    CameraModels/cvcameraviewer.cpp \
-    CameraModels/videoprocessthread.cpp
+    Models/robbery.cpp
 
 
 RESOURCES += qrc/qml.qrc
@@ -43,9 +45,4 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #else: unix:!android: target.path = /opt/$${TARGET}/bin
 #!isEmpty(target.path): INSTALLS += target
 
-HEADERS += \
-    Models/robbery.h \
-    debugoutput.h \
-    CameraModels/cvcameraviewer.h \
-    CameraModels/videoprocessthread.h
 

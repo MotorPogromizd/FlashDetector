@@ -1,3 +1,9 @@
 [submodule "OpenCvQtViewer"]
 	path = OpenCvQtViewer
 	url = https://github.com/RomandzeRoman/OpenCvQtViewer.git
+[submodule "QtDebugPrint"]
+	path = QtDebugPrint
+	url = https://github.com/MotorPogromizd/QtDebugPrint.git
+[submodule "QtFonts"]
+	path = QtFonts
+	url = https://github.com/MotorPogromizd/QtFonts.git

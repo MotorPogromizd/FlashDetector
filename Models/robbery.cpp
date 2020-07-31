@@ -1,7 +1,7 @@
 #include "robbery.h"
-#include "debugoutput.h"
+#include "QtDebugPrint/debugoutput.h"
 
-Robbery::Robbery(QObject *parent)
+Robbery::Robbery(QObject* parent)
     : QObject(parent)
     , _socket{ new QTcpSocket(this) }
     , _reconnectTimer{ new QTimer(this) }
